@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    font-family: cursive;
+}
+
+header{
+    background-color:rgb(202, 237, 240); 
+    color: rgba(93, 179, 93, 0.842);
+    padding: 16px;
+}
+
+nav{
+    background-color:rgb(202, 237, 240);
+    color:rgba(93, 179, 93, 0.842);
+    padding: 1px;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li > a{
+    text-decoration: none;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 8px;
+    color:darkseagreen;
+    border-bottom: 2px rgba(93, 179, 93, 0.842);
+    font-size: large;
+}
+
+.active{
+    font-weight: bold;
+}
+
+nav li > a:hover{
+    background-color: rgb(182, 224, 187);
+    border-bottom: 2px rgb(182, 224, 187);
+}
+
+.container{
+    border: 1px solid black;
+    border-radius: 0.35em;
+    margin: auto;
+    margin-bottom: 16px;
+    width: 80%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.row-color-rgb{ 
+    background-color:rgb(217, 225, 240);
+}
+
+
+
+.col{
+    height: 500px;
+    padding: 20px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+     
+}
+.col p{
+    text-align:justify;
+}
+
+
+.col img{
+    width: 400px;
+    border-radius: 0.85em;
+}
+
+
+.col video{
+    width: 450px;
+    border-radius: 0.85em;
+}
+
+footer{
+    background-color:rgb(202, 237, 240);
+    color: rgba(93, 179, 93, 0.842);
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    margin: 8px;
+}
+
+form{
+    width: 100%;
+}
+
+.row-input{
+    padding: 16px;
+    text-align: center;
+}
+
+input{
+    width: 60%;
+    border-radius: 0.45em;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid rgb(217, 225, 240);
+    background-color: rgb(205, 225, 230);
+
+}
+
+button{
+    width: 73%;
+    border-radius: 0.45em;
+    padding: 8px;
+    background-color:rgb(249, 246, 252);
+    outline: none;
+    color:rgb(41, 40, 40);
+}
+
+.h3-title{
+    color:rgba(93, 179, 93, 0.842) ;
+}
+
+
+@media screen and(max-width: 800px) {
+    .container{
+        width: 97%;
+    } 
+    .row{
+        display: block;
+    }
+    .col{
+        width: 94%;
+    }
+    
+    nav ul{
+        display:block;
+    }
+    nav li > a{
+        margin-bottom: 16px;
+    }
+}

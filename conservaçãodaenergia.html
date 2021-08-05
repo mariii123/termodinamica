@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/home/logo2.png" type="image/x-icon">
+    <title>SA 2° Ano SESI-SENAI</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h2>SA 2° Ano SESI-SENAI</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Teoria</a></li>
+            <li><a href="eficiencia.html">Eficiencia</a></li>
+            <li><a class="active" href="conservaçãodaenergia.html">Conservação</a></li>
+            <li><a href="máquina.html">Máquina</a></li>
+            <li><a href="Aplicações no dia dia.html">Aplicações</a></li>
+            <li><a href="Erros e fontes.html">Erros e fontes</a></li>
+        </ul>
+    </nav>
+    
+    <div class= "container">
+        <form>
+            <div class= "row row-input">
+               <h3 class= "h3-title"> 1° Calculo da conservação da energia (^U=Q-W)
+               </h3>
+
+            </div>
+           
+            <div class= "row row-input">
+                <input type="number" id="valor1" placeholder="valor 1">
+
+            </div>
+
+            <div class= "row row-input">
+                <input type="number" id="valor2" placeholder="valor 2">
+
+            </div>
+
+            <div class= "row row-input">
+                <input type="number" id="resultado" readonly>
+
+            </div>
+
+            <div class= "row row-input">
+                <button type="button" onclick="calcular()">Calcular</button>
+            </div>
+     <script>
+        const calcular= function(){
+            let valor2 =parseFloat(document.getElementById('valor2').value)
+            let valor1 =parseFloat(document.getElementById('valor1').value)
+            let resultado = valor1 - valor2
+            document.getElementById ('resultado').value =resultado
+        }
+    </script>
+        </form>
+     </div>
+
+     <div class= "container">
+        <form>
+            <div class= "row row-input">
+               <h3 class= "h3-title"> 2° Calculo da conservação da energia (Q=^U+W)
+               </h3>
+
+            </div>
+           
+            <div class= "row row-input">
+                <input type="number" id="valor3" placeholder="valor 3">
+
+            </div>
+
+            <div class= "row row-input">
+                <input type="number" id="valor4" placeholder="valor 4">
+
+            </div>
+
+            <div class= "row row-input">
+                <input type="number" id="resultado2" readonly>
+
+            </div>
+
+            <div class= "row row-input">
+                <button type="button" onclick="calcular2()">Calcular</button>
+            </div>
+
+     <script>
+        const calcular2= function(){
+            let valor4 =parseFloat(document.getElementById('valor4').value)
+            let valor3 =parseFloat(document.getElementById('valor3').value)
+            let resultado2 = valor4 + valor3
+            document.getElementById ('resultado2').value =resultado2
+        }
+    </script>
+        </form>
+     </div>
+
+     <div class= "container">
+        <form>
+            <div class= "row row-input">
+               <h3 class= "h3-title"> 3° Calculo da conservação da energia (W=Q-^U)
+               </h3>
+
+            </div>
+           
+            <div class= "row row-input">
+                <input type="number" id="valor5" placeholder="valor 5">
+
+            </div>
+
+            <div class= "row row-input">
+                <input type="number" id="valor6" placeholder="valor 6">
+
+            </div>
+
+            <div class= "row row-input">
+                <input type="number" id="resultado3" readonly>
+
+            </div>
+
+            <div class= "row row-input">
+                <button type="button" onclick="calcular3()">Calcular</button>
+            </div>
+
+     <script>
+        const calcular3= function(){
+            let valor6 =parseFloat(document.getElementById('valor6').value)
+            let valor5 =parseFloat(document.getElementById('valor5').value)
+            let resultado3 = valor5 - valor6
+            document.getElementById ('resultado3').value =resultado3
+        }
+    </script>
+        </form>
+     </div>
+
+    <footer>
+        <ul>
+       <li>sa2ao@senai.pt-br</li> 
+       <li>(48) 3322 - 1234</li>
+        </ul>
+    </footer>
+</body>
+</html>
